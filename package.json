@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/TenebrisMessor/Festival-de-Musica/issues"
   },
-  "homepage": "https://github.com/TenebrisMessor/Festival-de-Musica#readme"
+  "homepage": "https://github.com/TenebrisMessor/Festival-de-Musica#readme",
+  "devDependencies": {
+    "sass": "^1.55.0"
+  }
 }
