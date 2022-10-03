@@ -70,8 +70,11 @@ npm install --save-dev gulp
 
 ```
 
-Una vez instalado podremos ver la dependencia en el package.json y de la misma forma podemos iniciar y crear el archivo gulpfile.js en la carpeta raiz de nuestro proyecto.
-
+Una vez instalado podremos ver la dependencia en el package.json y de la misma forma podemos iniciar y crear el archivo gulpfile.js en la carpeta raiz de nuestro proyecto. Dentro de gulpfile podemos agregar la function tarea que solo va a imprimir mi primer tarea en consola, posterior a ello mandamos a llamar la funciòn colocando ```exports.primerTarea=tarea;``` despues en la terminal mandamos a llamar la funcion escribiendo, ```export.``` sirve para poner la tarea en node.
+```ssh 
+npx gulp primerTarea
+```
+Dado esto podemos ver la salida esperada, recordar colocar dentro de la función un callback es decir la funcion que se manda a llamar despues de otra función por ejemplo la funcion done utilizandolo como parametro y despues llamandolo dentro de la misma función.
 
 
 
