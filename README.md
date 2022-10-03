@@ -74,7 +74,9 @@ Una vez instalado podremos ver la dependencia en el package.json y de la misma f
 ```ssh 
 npx gulp primerTarea
 ```
-Dado esto podemos ver la salida esperada, recordar colocar dentro de la función un callback es decir la funcion que se manda a llamar despues de otra función por ejemplo la funcion done utilizandolo como parametro y despues llamandolo dentro de la misma función.
+Dado esto podemos ver la salida esperada, recordar colocar dentro de la función un callback es decir la funcion que se manda a llamar despues de otra función por ejemplo la funcion done utilizandolo como parametro y despues llamandolo dentro de la misma función. dentro del comando en terminal se va a mandar a llamar con lo que esta del lado izquierdo del export que es la identificación y la del derecho el nombre de la función.
+
+Ahora otra manera de hacer esta compilación es utilizando el package.json en el cual agregaremos otro script llamado tarea usando ```"tarea":"gulp tarea"``` ahora para mandar a llamar la función necesitaremos utilizar npm colocando en la terminal ´´´npm run tarea´´´ lo cual iniciara la tarea directo desde el package.json 
 
 
 
