@@ -1,9 +1,0 @@
-Primeros pasos para el desarrollo del proyecto
-Se instala Node.js para posteriormente instalar sass con npm -i sass y posterior a ello se crea un poco de codigo de sass dentro de un archivo llamado app.scss
-se inicia un proyecto con node init y se verifica en el package.json todas las dependencias instalando las dependencias de sass como 
-desarrollo posterior a ello se crea un script con sass para poder realizar la compilacion del codigo y convertirlo en css para el 
-mejor entendimiento del navgador de nuestro codigo el cual se encuentra en las caprpetas build/css posterior a ello instalamos gulp
-y creamos un gulpfile.js en el cual agregamos distintas funciones que facilitaran la automatizacion de ciertos procesos en la creacion de nuestro programa
-posterior a ello podemos compilar el codigo del gulpfile ya sea usando node o npm en el primer caso tendriamos que usar npx gulp tarea en estea
-caso por que "tarea " es el nombre que asociamos a nuestra funcion en export que facilita el uso con node y para hacerlo con npm tendremos que 
-escribir en terminal npm run tarea en ambos casos debe compilar correctamente usando otro script para la funcion en el package.json
