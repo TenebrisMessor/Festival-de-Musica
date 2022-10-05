@@ -1,2 +1,14 @@
 /*en los archivos scss podemos generar dos carpetas  ingresando sus nombres normalmente dejando app.scss afuera de ambas dado que es la hoja de estilos principalj, posterior a ello podemos generar mas hojas de estilos en las carpetas pero recordando que para evitar que el compilador las reconozca como hojas de estilo diferentes hay que colocar un guiòn bajo al inicio del nombre de cada uno de los archivos asi el compilador va a reconocerla como parte de la hoja principal en este caso app.scss*/
-$rojo: red;
+
+
+
+//Tipografia
+$fuente_principal: 'Montserrat', sans-serif;
+
+//Colores
+$verde : #00FF00;
+$rosa: #F53756;
+$amarillo: #FFD700;
+$morado: #8B008B;
+$negro: #000000;
+$blanco: #FFFFFF;

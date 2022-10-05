@@ -10,7 +10,7 @@ const {src, dest, watch } = require('gulp'); //requerir el paquete de gulp y ext
 const sass = require('gulp-sass')(require('sass')); //requerir el paquete de sass
 function css(done) {
 
-    src('src/scss/app.scss') //identificar el archivo sass
+    src('src/scss/**/*.scss') //identificar el archivo sass a compilar y todos los archivos que esten dentro de la carpeta scss
         .pipe(sass()) //compilarlo
         .pipe(dest('build/css')); // Almacenarlo en disco destino de la carpeta un pipe es una accion que se realiza despues de la otra y pertenece a la api de gulp
 
@@ -18,7 +18,7 @@ function css(done) {
 }
 
 function dev(done) {
-    watch('src/scss/app.scss', css); //vigilar los cambios en el archivo sass y ejecutar la funcion css
+    watch('src/scss/**/*.scss', css); //vigilar los cambios en el archivo sass y ejecutar la funcion css
     done();
 }
  
