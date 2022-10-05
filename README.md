@@ -78,7 +78,19 @@ Dado esto podemos ver la salida esperada, recordar colocar dentro de la función
 
 Ahora otra manera de hacer esta compilación es utilizando el package.json en el cual agregaremos otro script llamado tarea usando ```"tarea":"gulp tarea"``` ahora para mandar a llamar la función necesitaremos utilizar npm colocando en la terminal ´´´npm run tarea´´´ lo cual iniciara la tarea directo desde el package.json 
 
+```const {src, dest } = require('gulp');``` nos dice que va a extraer de sass las funciones src y dest como talde igual forma antes de ello tenemos que traer
+//sass requiriendo el paquete de sass y luego lo que hace es que lo convierte en una funcion que se puede utilizar en el codigo de la funcion css 
+//src es para identificar los archivos mientras que dest es para identificar la carpeta de destino y almacenar los archivos. Posterior a ello vamos a comenzar
+//la automatización de la compilación de sass a css y para ello vamos a utilizar el paquete de gulp-sass que es un plugin de gulp que nos permite compilar sass
+//a css y para ello vamos a utilizar el metodo pipe que es una funcion que se ejecuta despues de la otra y pertenece a la api de gulp y lo que hace es que  ejecuta
+//una funcion y luego ejecuta la siguiente y asi sucesivamente, dicha funcion es ```.pipe``` igualmente recordar instalar el plugin de gulp-sass con el comando 
+//```npm install gulp-sass``` y luego de ello vamos a ejecutar la tarea con el comando ```gulp css``` recordando que hay que hacer un const ```onst sass = require('gulp-sass')(require('sass'));``` y si todo sale bien nos va a generar un archivo css en la carpeta
+//build/css y si queremos que se ejecute automaticamente cada vez que se modifique el archivo sass vamos a utilizar el metodo watch que es un metodo de gulp que nos    
+//permite observar los cambios que se realizan en los archivos y ejecutar una tarea en especifico y para ello vamos a utilizar el metodo watch que es un metodo de gulp
+//que nos permite observar los cambios que se realizan en los archivos y ejecutar una tarea en especifico.
 
+//ahora vamos a agregar una funcion llamada dev para agregar un ```watch``` y para ello vamos a utilizar el metodo watch que es un metodo de gulp que nos permite observar
+//los cambios que se realizan en los archivos y ejecutar una tarea en especifico agregando la funcion dev que encontraremos en el gulpfile.js
 
 
 
