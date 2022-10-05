@@ -1,5 +1,6 @@
 // @import'base/variables'; //hay dos metodos para linkear las paginas de estilos, el primero es con el @import y el segundo es con el @use. el @import es mas antiguo y el @use es mas nuevo y mas recomendado
 @use 'base';
+@use 'layout';
 // @import'contenido/contenido';
 //la funciòn forward requiere que siempre se genere un archivo llamado _index.scss en la carpeta base para que el compilador pueda reconocerlo y asi poder linkear las hojas de estilos. 
 
