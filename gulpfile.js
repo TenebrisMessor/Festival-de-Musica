@@ -5,12 +5,13 @@
 
 // exports.tarea = tarea;  // exportar la tarea, la parte izquierda esta asociada con el como se va a llamara la tarea en la terminal con node y la de la derecha es el nombre de la funcion que se va a ejecutar
 
-
+const plumber =require('gulp-plumber'); //requerir el paquete de plumber
 const {src, dest, watch } = require('gulp'); //requerir el paquete de gulp y extraer las funciones src y dest como tal.
 const sass = require('gulp-sass')(require('sass')); //requerir el paquete de sass
 function css(done) {
 
     src('src/scss/**/*.scss') //identificar el archivo sass a compilar y todos los archivos que esten dentro de la carpeta scss
+        .pipe(plumber()) //usar el paquete de plumber    
         .pipe(sass()) //compilarlo
         .pipe(dest('build/css')); // Almacenarlo en disco destino de la carpeta un pipe es una accion que se realiza despues de la otra y pertenece a la api de gulp
 
