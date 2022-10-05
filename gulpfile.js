@@ -38,4 +38,4 @@ exports.css=css; //exportar la tarea, la parte izquierda esta asociada con el co
 //src es para identificar los archivos mientras que dest es para identificar la carpeta de destino y almacenar los archivos. Posterior a ello vamos a comenzar
 //la automatización de la compilación de sass a css y para ello vamos a utilizar el paquete de gulp-sass que es un plugin de gulp que nos permite compilar sass
 //a css y para ello vamos a utilizar el metodo pipe que es una funcion que se ejecuta despues de la otra y pertenece a la api de gulp y lo que hace es que  ejecuta
-//una funcion y luego ejecuta la siguiente y asi sucesivamente. En este caso vamos a utilizar el metodo pipe para compilar sass a css y para ello vamos a utilizar
+//una funcion y luego ejecuta la siguiente y asi sucesivamente.
