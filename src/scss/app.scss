@@ -1,5 +1,5 @@
 @import'base/variables'; //hay dos metodos para linkear las paginas de estilos, el primero es con el @import y el segundo es con el @use. el @import es mas antiguo y el @use es mas nuevo y mas recomendado
-
+@import'contenido/contenido';
 body {
   background-color: $verde;
 }
