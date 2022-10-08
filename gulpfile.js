@@ -21,11 +21,6 @@ function css(done) {
     done(); //callback que avisa a gulp cuando llegamos al final
 }
 
-function dev(done) {
-    watch('src/scss/**/*.scss', css); //vigilar los cambios en el archivo sass y ejecutar la funcion css
-    done();
-}
- 
 //Imagenes
 
 
@@ -38,6 +33,13 @@ function versionWebp(done) { //funcion para convertir las imagenes a webp
         .pipe(dest('build/img'));
     done();
 }
+
+function dev(done) {
+    watch('src/scss/**/*.scss', css); //vigilar los cambios en el archivo sass y ejecutar la funcion css
+    done();
+}
+ 
+
 
 
 exports.css=css; //exportar la tarea, la parte izquierda esta asociada con el como se va a llamara la tarea en la terminal con node y la de la derecha es el nombre de la funcion que se va a ejecutar
