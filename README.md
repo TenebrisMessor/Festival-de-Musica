@@ -94,6 +94,7 @@ Ahora otra manera de hacer esta compilación es utilizando el package.json en el
 
 
 
+//GENERANDO MIXINS
 
 
 
